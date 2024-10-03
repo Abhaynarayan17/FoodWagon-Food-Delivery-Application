@@ -15,40 +15,46 @@ including updating order statuses (e.g., accepted, prepared, out for delivery).
 
 Customer Stories:
 1. Customer Registration and Authentication:
-○ As a Customer, I should be able to register, log in, and log out of the application.
+As a Customer, I should be able to register, log in, and log out of the application.
 2. Restaurant Browsing and Menu Viewing:
-○ As a Customer, I should be able to browse a list of available Restaurants.
-○ As a Customer, I should be able to view the menu items offered by a selected Restaurant,
+As a Customer, I should be able to browse a list of available Restaurants.
+As a Customer, I should be able to view the menu items offered by a selected Restaurant,
 along with details such as price, description, and availability.
-3. Order Placement:
-○ As a Customer, I should be able to place an order by selecting items from a Restaurant's
+
+4. Order Placement:
+As a Customer, I should be able to place an order by selecting items from a Restaurant's
 menu and proceeding to checkout.
-Instructions:
+
 ● Backend Development:
-○ Develop the backend logic using ASP.NET Core to handle user authentication, menu
+Develop the backend logic using ASP.NET Core to handle user authentication, menu
 management, and order management.
-○ Design the database schema to manage Restaurants, Customers, menu items, and
+Design the database schema to manage Restaurants, Customers, menu items, and
 orders. Implement stored procedures for these functionalities.
-SLK PreJoining Aug 24
-○ Implement custom exceptions to handle errors such as invalid input during registration
+
+Implement custom exceptions to handle errors such as invalid input during registration
 or order placement.
-○ Use appropriate design patterns like Repository Pattern and Factory Pattern for
+Use appropriate design patterns like Repository Pattern and Factory Pattern for
 organizing data access and business logic.
+
 ● Frontend Development:
-○ Create responsive web pages for user registration, login, restaurant browsing, menu
+Create responsive web pages for user registration, login, restaurant browsing, menu
 viewing, and order placement using HTML, CSS, and JavaScript.
-○ Use Angular to implement single-page application features such as routing, components,
+Use Angular to implement single-page application features such as routing, components,
 and services for a smooth user experience.
+
 ● Testing:
-○ Implement unit tests for user authentication, menu management, and order
+Implement unit tests for user authentication, menu management, and order
 management functionalities.
-○ Perform UI testing to ensure that the frontend meets design requirements and functions
+Perform UI testing to ensure that the frontend meets design requirements and functions
 correctly.
+
 ● Documentation:
-○ Create a schema diagram for the database tables involved in user management, menu
+Create a schema diagram for the database tables involved in user management, menu
 management, and order management.
-○ Submit the SQL script for table creation, stored procedures, and any queries executed in
+Submit the SQL script for table creation, stored procedures, and any queries executed in
 this sprint.
+
+
 Sprint 2: Order Tracking and Delivery Management
 Restaurant Stories:
 1. Order Management:
