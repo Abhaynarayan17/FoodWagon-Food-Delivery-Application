@@ -1,0 +1,55 @@
+  <div class="signup-container">
+    <form #signupForm="ngForm" (submit)="onCustomerSignup(signupForm)">
+      <h2>Customer Signup</h2>
+    
+      <div class="form-group mb-3 required">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" class="form-control form-control-lg" placeholder="Customer Name" required name="customerName" #customerName="ngModel" [(ngModel)]="service.formData.customerName">
+      </div>
+  
+      <div class="form-group mb-3 required">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control form-control-lg" placeholder="Email" required name="email" #email="ngModel" [(ngModel)]="service.formData.emailID">
+      </div>
+  
+      <div class="form-group mb-3 required">
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="form-control form-control-lg" placeholder="Password" required name="password" #password="ngModel" [(ngModel)]="service.formData.password">
+      </div>
+  
+      <div class="form-group mb-3 required">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" class="form-control form-control-lg" placeholder="Confirm Password" required name="confirmPassword" #confirmPassword="ngModel" [(ngModel)]="service.formData.confirmPassword">
+      </div>
+  
+      <div class="form-group mb-3 required">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" class="form-control form-control-lg" placeholder="Phone Number" required name="phoneNumber" #phoneNumber="ngModel" [(ngModel)]="service.formData.phoneNumber">
+      </div>
+  
+      <div class="form-group mb-3 required">
+        <label for="customerAddress">Customer Address:</label>
+        <input type="text" id="customerAddress" class="form-control form-control-lg" placeholder="Customer Address" required name="customerAddress" #customerAddress="ngModel" [(ngModel)]="service.formData.customerAddress">
+      </div>
+  
+      <div class="form-group mb-3 required">
+        <label for="city">City:</label>
+        <input type="text" id="city" class="form-control form-control-lg" placeholder="City" required name="city" #city="ngModel" [(ngModel)]="service.formData.city">
+      </div>
+  
+      <div class="form-group mb-3 required">
+        <label for="state">State:</label>
+        <input type="text" id="state" class="form-control form-control-lg" placeholder="State" required name="state" #state="ngModel" [(ngModel)]="service.formData.state">
+      </div>
+  
+      <div class="form-group mb-3 required">
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" class="form-control form-control-lg" placeholder="Pincode" required name="pincode" #pincode="ngModel" [(ngModel)]="service.formData.pincode">
+      </div>
+  
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary btn-lg" [disabled]="!signupForm.valid">Sign up</button>
+      </div>
+    </form>
+  </div>
+  
