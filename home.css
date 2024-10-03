@@ -1,0 +1,55 @@
+/* Container to center the content */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px;
+}
+
+.home {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  border: none;
+  border-radius: 15px; /* Adds rounded corners */
+  background-color: rgba(41, 41, 41, 0.6); /* Semi-transparent background */
+  box-shadow: none; /* Removed box-shadow */
+  font-family: 'Roboto', sans-serif;
+  text-align: center; /* Center the entire content */
+  backdrop-filter: blur(10px); /* Adds blur effect */
+}
+
+
+.home h2 {
+  color: #fceb06;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.home h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #fceb06;
+}
+
+@media (max-width: 768px) {
+  .home {
+      padding: 1.5rem;
+  }
+
+  .home h2 {
+      font-size: 2rem;
+  }
+
+  .home p {
+      font-size: 1.1rem;
+  }
+}
