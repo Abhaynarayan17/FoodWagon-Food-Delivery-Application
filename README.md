@@ -5,13 +5,14 @@ registration, login, menu management, order placement, and delivery tracking.
 Sprint 1: User Registration, Authentication, and Menu Management
 Restaurant Stories:
 1. Restaurant Authentication:
-○ As a Restaurant, I should be able to register, log in, and log out of the application.
+As a Restaurant, I should be able to register, log in, and log out of the application.
 2. Menu Management:
-○ As a Restaurant, I should be able to perform CRUD (Create, Read, Update, Delete)
+As a Restaurant, I should be able to perform CRUD (Create, Read, Update, Delete)
 operations on the menu items.
 3. Order Management:
-○ As a Restaurant, I should be able to view and manage orders placed by Customers,
+As a Restaurant, I should be able to view and manage orders placed by Customers,
 including updating order statuses (e.g., accepted, prepared, out for delivery).
+
 Customer Stories:
 1. Customer Registration and Authentication:
 ○ As a Customer, I should be able to register, log in, and log out of the application.
