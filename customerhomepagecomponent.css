@@ -1,0 +1,93 @@
+/* Container styling */
+.container {
+    max-width: 1200px; /* Increased width for more space */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Restaurants Heading */
+.restaurants-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of columns */
+    margin: 0; /* Remove negative margin */
+}
+
+/* Column styling */
+.col-md-4, .col-sm-6, .col-12 {
+    padding: 10px; /* Reduced padding */
+    width: calc(33.33% - 20px); /* Set to one-third minus padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Card styling */
+.card {
+    border: 1px solid rgba(221, 221, 221, 0.5); /* Lighter border for transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increased shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(58, 58, 58, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    overflow: hidden; /* Prevent overflow */
+    margin-bottom: 10px; /* Space between cards */
+}
+
+/* Card hover effect */
+.card-hover:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card body styling */
+.card-body {
+    padding: 15px; /* Reduced padding */
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.3rem; /* Reduced font size */
+    font-weight: 600;
+    color: #ffd900; /* Primary color for titles */
+    margin-bottom: 5px; /* Less spacing */
+}
+
+/* Card text styling */
+.card-text {
+    font-size: 0.9rem; /* Reduced font size */
+    color: #ffffff; /* Darker text color for contrast */
+    margin-bottom: 3px; /* Less spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .restaurants-heading {
+        font-size: 1.8rem; /* Slightly smaller for smaller screens */
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+    .card-title {
+        font-size: 1.1rem; /* Further reduce for smaller screens */
+        margin-bottom: 8px; /* Reduce space below title */
+    }
+
+    .card-text {
+        font-size: 0.75rem; /* Further reduce for smaller screens */
+        margin-bottom: 4px; /* Reduce space below text */
+    }
+
+    .card-body {
+        padding: 15px; /* Reduce padding for smaller cards */
+    }
+
+    .col-md-4, .col-sm-6, .col-12 {
+        width: 100%; /* Stack vertically on small screens */
+    }
+}
