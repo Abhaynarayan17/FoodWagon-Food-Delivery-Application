@@ -1,0 +1,181 @@
+/* Container styling */
+.container {
+    max-width: 1200px; /* Maintain a maximum width */
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative; /* Allow absolute positioning for buttons */
+}
+
+/* Menu Header and Buttons */
+.menu-header {
+    display: flex;
+    flex-direction: column; /* Stack heading and buttons vertically */
+    align-items: center; /* Center the heading and buttons */
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* Menu heading styling */
+.menu-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+/* Logout button styling */
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem; /* Space between heading and button */
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Checkout button styling */
+.checkout {
+    margin-top: 1rem; /* Space below the logout button */
+}
+
+.checkout button {
+    background-color: #28a745;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout button:hover {
+    background-color: #218838;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of columns */
+    justify-content: center; /* Center the cards in the row */
+    margin: 0;
+}
+
+/* Column styling */
+.col-md-4,
+.col-sm-6,
+.col-12 {
+    padding: 0 15px; /* Horizontal padding */
+    margin-bottom: 1.5rem; /* Space below each column */
+    width: calc(33.33% - 30px); /* Three columns in a row with spacing */
+    max-width: 400px; /* Maintain a maximum width */
+}
+
+/* Card styling */
+.card {
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+
+
+    
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+/* Card text styling */
+.card-text {
+    font-size: 1.2rem; /* Increase font size */
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+/* Card hover effect */
+.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button group container */
+.button-group {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center; /* Align buttons vertically */
+    margin-top: 1rem; /* Space above the button group */
+}
+
+/* Buttons for increasing/decreasing quantity */
+.button-group button {
+    background-color: #ababab; /* Default secondary button color */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem 1rem; /* Size of the buttons */
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.button-group button:hover {
+    background-color: #3b3b3b; /* Darker shade on hover */
+}
+
+/* Styling for the item count */
+.button-group span {
+    font-size: 1.2rem; /* Size of the item count text */
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0.5rem; /* Spacing between the buttons */
+}
+
+/* Responsive design */
+@media (max-width: 767.98px) {
+    .button-group button {
+        padding: 0.4rem 0.8rem; /* Smaller buttons for mobile */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .button-group span {
+        font-size: 1rem; /* Adjust item count size for smaller screens */
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem; /* Smaller title font size */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Smaller text font size */
+    }
+
+    .col-md-4,
+    .col-sm-6,
+    .col-12 {
+        width: 100%; /* Stack cards vertically on small screens */
+    }
+}
