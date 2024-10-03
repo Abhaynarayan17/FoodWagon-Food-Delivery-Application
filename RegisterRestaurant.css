@@ -1,0 +1,55 @@
+.form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+}
+
+  
+  .form-group {
+    margin-bottom: 15px; /* Spacing between form groups */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px; /* Spacing between label and input */
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Spacing between input fields and button */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-success {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-success:hover {
+    background-color: #3e8e41;
+  }
+  
+  .mt-3 {
+    margin-top: 15px; /* Spacing between button and link */
+  }
+  
+  a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
