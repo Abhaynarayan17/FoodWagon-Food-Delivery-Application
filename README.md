@@ -5,10 +5,12 @@ registration, login, menu management, order placement, and delivery tracking.
 Sprint 1: User Registration, Authentication, and Menu Management
 Restaurant Stories:
 1. Restaurant Authentication:
-As a Restaurant, I should be able to register, log in, and log out of the application.
+As a Restaurant, I should be able to register, log in, and log out of the application. 
+
 2. Menu Management:
 As a Restaurant, I should be able to perform CRUD (Create, Read, Update, Delete)
 operations on the menu items.
+
 3. Order Management:
 As a Restaurant, I should be able to view and manage orders placed by Customers,
 including updating order statuses (e.g., accepted, prepared, out for delivery).
@@ -48,27 +50,23 @@ management functionalities.
 Perform UI testing to ensure that the frontend meets design requirements and functions
 correctly.
 
-● Documentation:
-Create a schema diagram for the database tables involved in user management, menu
-management, and order management.
-Submit the SQL script for table creation, stored procedures, and any queries executed in
-this sprint.
-
-
 Sprint 2: Order Tracking and Delivery Management
 Restaurant Stories:
 1. Order Management:
 ○ As a Restaurant, I should be able to update the status of an order (e.g., order accepted,
 food prepared, out for delivery).
+
 2. Delivery Management:
-○ As a Restaurant, I should be able to assign orders to delivery personnel and track the
+As a Restaurant, I should be able to assign orders to delivery personnel and track the
 status of deliveries.
+
 Customer Stories:
 1. Order Tracking:
-○ As a Customer, I should be able to track the status of my order in real-time, including
+As a Customer, I should be able to track the status of my order in real-time, including
 seeing when the order is accepted, prepared, and out for delivery.
+
 2. Error Handling and Enhancements:
-○ Implement advanced error handling, including custom exceptions for order processing
+Implement advanced error handling, including custom exceptions for order processing
 and delivery tracking.
-○ Optimize code using Lambda expressions where applicable, especially in filtering and
+Optimize code using Lambda expressions where applicable, especially in filtering and
 sorting operations.
