@@ -1,0 +1,152 @@
+/* Checkout Container */
+.checkout-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:  rgba(255, 255, 255, 0.8); 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); 
+}
+
+
+/* Checkout Heading */
+.checkout-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Item List */
+.item-list {
+  margin-bottom: 20px;
+}
+
+/* Each item in the list */
+.item {
+  background-color:  rgba(255, 255, 255, 0.8);  /* Increased transparency */
+  border: 1px solid rgba(0, 0, 0, 0.4); /* Lighter border */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+  backdrop-filter: blur(15px); /* Increased blur effect */
+}
+
+
+/* Item details */
+.item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Item name styling */
+.item-name {
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: 600; /* Bold font */
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+/* Item ID styling */
+.item-id {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 5px; /* Slight spacing */
+}
+
+/* Item price styling */
+.item-price {
+  font-size: 1.5rem;
+  color: #28a745; /* Green for price */
+  margin-bottom: 5px;
+}
+
+/* Item quantity styling */
+.item-quantity {
+  font-size: 1rem;
+  color: #000000; /* Green for price */
+  margin-bottom: 5px;
+}
+
+/* Total amount section */
+.total-amount {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Total amount heading */
+.total-amount h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Action buttons container */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Button styling */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #117e2a;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: #0088ff;
+  color: white;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .checkout-container {
+      padding: 15px;
+  }
+
+  .checkout-heading {
+      font-size: 1.5rem;
+  }
+
+  .item-name,
+  .item-price,
+  .item-quantity {
+      font-size: 1rem;
+  }
+
+  .total-amount h3 {
+      font-size: 1.5rem;
+  }
+
+  .btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+}
