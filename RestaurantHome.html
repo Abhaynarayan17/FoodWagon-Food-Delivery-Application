@@ -1,0 +1,68 @@
+
+<!-- Add Item Form (shown when addItem is clicked) -->
+<div class="restaurant-home-container">
+  <h2>Welcome</h2>
+
+  <!-- Menu Management Section -->
+  <div class="menu-management">
+    <h3>Menu Management</h3>
+    <button class="btn btn-primary" (click)="addItem()">Add Item</button>
+    <button class="btn btn-primary mt-3" (click)="viewOrders()">View Orders</button>
+  </div>
+
+  <!-- Add Item Form (shown when addItem is clicked) -->
+  <div *ngIf="showAddItemForm" class="add-item-form">
+    <h3>Add Menu Item</h3>
+
+    <form #form="ngForm" (submit)="submitItem(form)">
+      <!-- Food Name -->
+      <div class="form-group mb-3 required">
+        <label for="foodName">Food Name:</label>
+        <input type="text" id="foodName" class="form-control form-control-lg" placeholder="Enter Food Name" required maxlength="100" name="foodName" [(ngModel)]="service.formData.foodName">
+      </div>
+
+      <!-- Food Price -->
+      <div class="form-group mb-3 required">
+        <label for="foodPrice">Food Price:</label>
+        <input type="number" step="0.01" id="foodPrice" class="form-control form-control-lg" placeholder="Enter Food Price" required name="foodPrice" [(ngModel)]="service.formData.foodPrice">
+      </div>
+
+      <!-- Submit Button -->
+      <div class="d-grid">
+        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+        <br /> <br />
+      </div>
+    </form>
+  </div>
+
+ <!-- Menu Items Table -->
+<div class="table-container">
+  <h3>Added Menu Items</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>SL No</th>
+        <th>Food Name</th>
+        <th>Food Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of menuItems; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item.foodName }}</td>
+        <td> &#8377; {{ item.foodPrice }}</td> 
+        <td>
+          <button class="delete-btn" (click)="deleteItem(item.foodId)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <!-- Logout Button -->
+  <div class="logout-section">
+    <button class="btn btn-primary mt-3" (click)="logout()">Logout</button>
+  </div>
+</div>
