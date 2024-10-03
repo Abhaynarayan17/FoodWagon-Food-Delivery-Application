@@ -1,0 +1,33 @@
+<div class="container mt-4">
+    <!-- Menu Header -->
+    <div class="menu-header">
+      <h2 class="menu-heading"> Restaurant Menu</h2>
+      <button class="logout-btn" (click)="logout()">Logout</button> <br/> 
+      <div class="checkout row myorder" style="width: 100%;" >
+        <button (click)="onCheckOut()">Checkout (Total: &#8377;{{ getTotalAmount() }})</button>
+      </div>
+    </div>
+    
+    <!-- Menu Items -->
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-12 mb-4" *ngFor="let item of MenuDetails">
+        <div class="card h-100 d-flex flex-column justify-content-between card-hover">
+          <div class="card-body text-center">
+            <h5 class="card-title font-weight-bold">{{ item.foodName }}</h5>
+            <p class="card-text">ID: {{ item.foodId }}</p>
+            <p class="card-text">Price: ₹{{ item.foodPrice }}</p>
+            
+            <!-- CRUD Buttons -->\
+        
+            <div class="button-group d-flex justify-content-center align-items-center mt-2">
+                <button class="btn btn-sm btn-secondary me-2" (click)="decrease(item)">-</button>
+                <span class="mx-2">{{ item.itemCount }}</span>
+                <button class="btn btn-sm btn-secondary ms-2" (click)="increase(item)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
