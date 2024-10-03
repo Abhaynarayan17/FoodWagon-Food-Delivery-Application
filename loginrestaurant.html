@@ -1,0 +1,26 @@
+<p>login-restaurant works!</p>
+
+<div class="form">
+    <h2>Login as Restaurant</h2>
+    <form #form="ngForm" (submit)="onLoginRestro(form)">
+        <div class="form-group mb-3 required">
+            <label>Email-id</label>
+            <input type="email" class="form-control form-control-lg" placeholder="Email Id" required name="email" #emailId="ngModel" [(ngModel)]="service.formData.emailID"> 
+        </div>
+    
+        <div class="form-group mb-3 required">
+            <label>Password</label>
+            <input type="password" class="form-control form-control-lg" placeholder="Enter Password" required name="password" #password="ngModel" [(ngModel)]="service.formData.password"> 
+        </div>
+    
+        <div class="d-grid">
+            <button class="btn btn-lg btn-success" type="submit" [disabled]="!form.valid">
+                Login Restaurant
+            </button>
+        </div>
+    
+    </form>
+</div>
+
+
+
