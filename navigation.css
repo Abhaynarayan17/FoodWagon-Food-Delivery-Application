@@ -1,0 +1,82 @@
+/* Reset default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Sleek and modern font */
+    line-height: 1.7; /* Slightly increased for better readability */
+    background-color: #f4f4f4; /* Light background for the whole page */
+    color: #000000; /* Neutral text color */
+}
+
+/* Navigation styles */
+nav {
+    background-color: rgba(255, 255, 255, 0.4); /* Slightly transparent white background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a polished look */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Adds a slight blur to the background */
+}
+
+/* Navigation items */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 40px; /* Increased spacing for breathing room */
+}
+
+nav li:last-child {
+    margin-right: 0; /* No margin for the last item */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Dark gray for better readability */
+    font-weight: 500;
+    padding: 10px 20px; /* More padding for larger click area */
+    border-radius: 8px; /* Softer rounded corners */
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    font-family: 'Poppins', sans-serif; /* Sleek, modern font for the links */
+    font-size: 16px; /* Larger font size for readability */
+}
+
+nav a:hover {
+    color: #fff; /* White text on hover */
+    
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Shadow on hover */
+}
+
+nav a.active {
+    color: #ffffff; /* White text for active link */
+
+    font-weight: 700; /* Bolder active link */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(51, 51, 51, 0.3); /* Slight shadow for the active state */
+}
+
+/* Responsive navigation for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stacked items on smaller screens */
+        padding: 15px;
+    }
+
+    nav li {
+        margin-bottom: 20px; /* Spacing between items in mobile view */
+    }
+
+    nav li:last-child {
+        margin-bottom: 0;
+    }
+}
