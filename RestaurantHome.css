@@ -1,0 +1,116 @@
+.restaurant-home-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Increased rounded edges */
+  backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* Table Container */
+.table-container {
+  max-width: 600px; /* Match the main container's width */
+  margin: 20px auto; /* Center it and provide some top margin */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Increased rounded edges */
+  backdrop-filter: blur(10px); /* Blur effect */
+}
+
+.menu-management {
+  margin-bottom: 30px;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.logout-section {
+  margin-top: 40px;
+}
+
+.add-item-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+  border-radius: 15px; /* Rounded edges */
+  border: 1px solid #ddd;
+  backdrop-filter: blur(10px); /* Blur effect */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate; /* Separate borders */
+  border-spacing: 0 10px; /* Vertical gap between rows */
+}
+
+.table th, .table td {
+  padding: 15px; /* Increased padding for cells */
+  text-align: center;
+  border: 1px solid #ddd; /* Light border around table cells */
+}
+
+.table th {
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background for headers */
+  color: #007bff; /* Blue text color */
+}
+
+.table tr:nth-child(even) {
+  background-color: rgba(240, 240, 240, 0.6); /* Light grey for even rows */
+}
+
+.table tr:hover {
+  background-color: rgba(0, 123, 255, 0.2); /* Light blue hover effect */
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red color for delete button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
