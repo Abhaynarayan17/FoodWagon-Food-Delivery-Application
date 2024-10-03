@@ -1,0 +1,62 @@
+<p>register-restaurant works!</p>
+<div class="form">
+    <h2>Register as Restaurant</h2>
+    <form #form="ngForm" (submit)="onRegister(form)">
+        <div class="form-group mb-3 required">
+            <label>Restaurant Name</label>
+            <input class="form-control form-control-lg" placeholder="Restaurant Name" required name="restroName" #restroName="ngModel" [(ngModel)]="service.formData.restaurantName"> 
+        </div>
+ 
+        <div class="form-group mb-3 required">
+            <label>Seller Name</label>
+            <input class="form-control form-control-lg" placeholder="Seller Name" required name="sellerName" #sellerName="ngModel" [(ngModel)]="service.formData.sellerName"> 
+        </div>
+    
+        <div class="form-group mb-3 required">
+            <label>Phone Number</label>
+            <input type="tel" class="form-control form-control-lg" placeholder="Phone Number" required name="phoneNumber" #phoneNumber="ngModel" [(ngModel)]="service.formData.phoneNumber"> 
+        </div>
+    
+        <div class="form-group mb-3 required">
+            <label>Email-id</label>
+            <input type="email" class="form-control form-control-lg" placeholder="Email Id" required name="emailId" #emailId="ngModel" [(ngModel)]="service.formData.emailID"> 
+        </div>
+    
+        <div class="form-group mb-3 required">
+            <label>Address</label>
+            <input class="form-control form-control-lg" placeholder="Restaurant Address" required name="RestroAddress" #RestroAddress="ngModel" [(ngModel)]="service.formData.restaurantAddress"> 
+        </div>
+    
+        <div class="form-group mb-3 required">
+            <label>City</label>
+            <input class="form-control form-control-lg" placeholder="Restaurant City" required name="restroCity" #restroCity="ngModel" [(ngModel)]="service.formData.city"> 
+        </div>
+    
+        <div class="form-group mb-3 required">
+            <label>State</label>
+            <input class="form-control form-control-lg" placeholder="Restaurant State" required name="restroState" #restroState="ngModel" [(ngModel)]="service.formData.state"> 
+        </div>
+    
+        <div class="form-group mb-3 required">
+            <label>Pincode</label>
+            <input class="form-control form-control-lg" placeholder="Restaurant Pincode" required name="restroPin" #restroPin="ngModel" [(ngModel)]="service.formData.pincode"> 
+        </div>
+
+        <div class="form-group mb-3 required">
+            <label>Password</label>
+            <input type="password" class="form-control form-control-lg" placeholder="Enter Password" required name="password" #password="ngModel" [(ngModel)]="service.formData.password"> 
+        </div>
+
+        <div class="form-group mb-3 required">
+            <label>Confirm Password</label>
+            <input type="password" class="form-control form-control-lg" placeholder="Confirm Password" required name="confirmPassword" #confirmPassword="ngModel" [(ngModel)]="service.formData.confirmPassword"> 
+        </div>
+    
+        <div class="d-grid">
+            <button class="btn btn-lg btn-success" type="submit" [disabled]="!form.valid">
+                Submit
+            </button>
+        </div>
+       
+    </form>
+</div>
