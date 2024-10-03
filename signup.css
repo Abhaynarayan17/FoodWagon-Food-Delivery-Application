@@ -1,0 +1,61 @@
+/* Container for the signup form */
+.signup-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(249, 249, 249, 0.6); /* Semi-transparent background */
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Rounded edges */
+  backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* Style for form groups */
+.form-group {
+  margin-bottom: 15px; /* Spacing between form groups */
+}
+
+/* Style for labels within form groups */
+.form-group label {
+  display: block;
+  margin-bottom: 5px; /* Spacing between label and input */
+}
+
+/* Style for input fields */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded edges for input fields */
+}
+
+/* Style for signup button */
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Rounded edges for the button */
+  cursor: pointer;
+}
+
+/* Hover effect for the signup button */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Margin-top for spacing between button and link */
+.mt-3 {
+  margin-top: 15px;
+}
+
+/* Style for links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Hover effect for links */
+a:hover {
+  text-decoration: underline;
+}
