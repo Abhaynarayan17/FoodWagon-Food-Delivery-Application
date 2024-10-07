@@ -6,7 +6,7 @@ namespace FoodWagon.Models
     public class CustOrders
     {
         
-            [Key]
+            [Key]  //make this as primary key
             public int Id { get; set; }  // Assuming this is equivalent to CustomerId
 
             [MaxLength(100)]
